@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Impulse Prep</title>
+
+        <!-- Bootstrap import-->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- JQuery Import -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" style="width:100px;" alt="Logo"></a>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-toggle="collapse" data-target="#collapse_target">About</a>
+						</li>
+						<li class="nav-item">
+                            <a href="#services" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#theteam" class="nav-link" data-toggle="collapse" data-target="#collapse_target">The Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="homeOrig">
+            <script>
+                $(document).ready(function(){ //smooth scroll for all browsers
+                    $("a").on('click', function(event) {
+
+                        if (this.hash !== "") {
+                            event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function() {
+                            window.location.hash = hash;
+                        });
+                        }
+                    });
+                });
+
+                function opening() {
+                    var open = document.getElementsByClassName("open");
+                    var openP = document.getElementsByClassName("openP");
+
+                    setTimeout(function() { 
+                        $('#open1').fadeIn(1000);
+                        $('#open1').fadeOut(2200);
+                    }, 1200);
+
+                    setTimeout(function() { 
+                        open[0].style.display = "block";
+                        open[1].style.display = "block";
+                        open[2].style.display = "block";
+                    }, 3200);
+
+                    setTimeout(function() { 
+                        open[0].style.transition = "all 4s";
+                        open[0].style.color = "#51c9f9";
+                        openP[0].style.transition = "all 4s";
+                        openP[0].style.color = "white";
+                    }, 3400);
+                    
+                    setTimeout(function() { 
+                        open[1].style.transition = "all 4s";
+                        open[1].style.color = "#51c9f9";
+                        openP[1].style.transition = "all 4s";
+                        openP[1].style.color = "white";
+                    }, 4900);
+
+                    setTimeout(function() { 
+                        open[2].style.transition = "all 4s";
+                        open[2].style.color = "#51c9f9";
+                        openP[2].style.transition = "all 4s";
+                        openP[2].style.color = "white";
+                    }, 6400);
+
+
+                    // setTimeout(function() {
+                    //     $('html, body').animate({
+                    //         scrollTop: $(this.hash).offset().top
+                    //     }, 800, function() {
+                    //         window.location.hash = hash;
+                    //     });
+                    // }, 3600);
+                    
+                }
+                window.onload = opening;
+            </script>
+
+            <div class="landing-text">
+                <div id="open1">
+                    <h2><span style="color:#51c9f9">Six</span> Team Members</h2><br>
+                </div>
+            </div>
+
+            <div class="landing-text">
+
+                <div class="open" style="display:none; color:#121212">
+                    <h1>1570</h1>
+                    <p class="openP">Average SAT Score</p>
+                </div>
+                <div class="open" style="display:none; color:#121212">
+                    <h1>3</h1>
+                    <p class="openP">National Merit Semifinalists</p>
+                </div>
+                <div class="open" style="display:none; color:#121212">
+                    <h1>6/6</h1>
+                    <p class="openP">Team Members In Top 5% of HS Class</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="home">
+            <div class="landing-text">
+                <div>
+                    <h1 style="color:#51c9f9">Impulse Prep</h1>
+                    <br>
+                    <a href="#about" class="btn btn-default btn-lg start" id="startBtn">Get Started</a>
+                    <br><br>
+                    
+                    <div style="width:60%;">
+                        <p>
+                            Our IMPULSE PREP team spans the breadth of high achievers in Greenwich. 
+                            With a class president, a nationally recognized debater, and an internationally acclaimed pianist, 
+                            a perfect score on the math portion of the SAT is only the first prerequisite for being on our team. 
+                            <br><br>
+                            Our coaches have been accepted to institutions including The University of Pennsylvania’s Jerome Fisher 
+                            Program in Management and Technology, The University of Chicago, Dartmouth College, The University of 
+                            Southern California, and The University of North Carolina at Chapel Hill.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="about" style="background-color:#212121">
+            <div class="container" style="padding-top:10vh; padding-bottom:10vh;">
+                <div class="row" style="text-align:center;">
+                    <div class="col-md-12">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+                <div class="row" style="color:grey; text-align:left;">
+                    <div class="col-md-12">
+                        <p><br>
+                            We founded Impulse Prep with a simple purpose: to provide high-quality college preparatory 
+                            coaching for our clients. Our elite team of six spans a broad array of subjects, 
+                            from advanced mathematics to the humanities. We are passionate not only about our own studies 
+                            but about forwarding our success to the next generation of learners.
+                            <br><br>
+                            Here is a complete list of the colleges we have been accepted to on academic merit:
+                            
+                        </p>
+                        <ul>
+                            <li>
+                                The University of Pennsylvania’s Jerome Fisher Program in Management and Technology
+                            </li>
+                            <li>
+                                The University of Chicago
+                            </li>
+                            <li>
+                                Dartmouth College
+                            </li>
+                            <li>
+                                University of Southern California (Merit Finalist & Honors)
+                            </li>
+                            <li>
+                                University of North Carolina at Chapel Hill (Honors)
+                            </li>
+                            <li>
+                                Northeastern University (Honors)
+                            </li>
+                            <li>
+                                McGill University Software Engineering Program
+                            </li>
+                            <li>
+                                Fordham University (Honors, Merit Scholar)
+                            </li>
+                            <li>
+                                University of Illinois Urbana-Champaign Grainger                            
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" style="background-color:#121212">
+            <div class="container">
+                <div class="row" style="padding-top:10vh; text-align:center;">
+                    <div class="col-md-12">
+                        <h1>Our Services</h1>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:10vh;">
+                    <div class="col-md-12">
+                        <h3>College Preparedness Test Tutoring</h3>
+                        <ul>
+                            <li>
+                                SAT
+                            </li>
+                            <li>
+                                ACT
+                            </li>
+                            <li>
+                                SAT II Subject Tests
+                            </li>
+                        </ul>
+                        <h3>Academic Tutoring</h3>
+                        <ul>
+                            <li>
+                                Any academic subject
+                            </li>
+                        </ul>
+                        <h3>Essay Review</h3>
+                        <ul>
+                            <li>
+                                1 time essay review
+                            </li>
+                            <li>
+                                Essay support and planning
+                            </li>
+                        </ul>
+                        <h3>College Planning</h3>
+                        <ul>
+                            <li>
+                                Work on developing a theme for college admissions
+                            </li>
+                            <li>
+                                Extracurricular activities
+                            </li>
+                            <li>
+                                College List
+                            </li>
+                            <li>
+                                Utilizing the additional info section
+                            </li>
+                        </ul>
+                        <h3>Music Lessons</h3>
+                        <ul>
+                            <li>
+                                Classical Piano
+                            </li>
+                            <li>
+                                Jazz Piano
+                            </li>
+                            <li>
+                                Drums
+                            </li>
+                            <li>
+                                Bassoon
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" style="background-color:#212121">
+            <div class="container" style="height:100vh;">
+                <div class="row" style="padding-top:10vh; text-align:center;">
+                    <div class="col-md-12">
+                        <h1>Pricing</h1>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:10vh;">
+                    <div class="col-md-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="theteam">
+			<div class="container">
+                <div class="row" style="padding-top:10vh; text-align:center;">
+                    <div class="col-md-12" style="padding-bottom:5vh;">
+                        <h1>The Team</h1>
+                    </div>
+                </div>
+				<div class="card-deck">
+                    <!-- Emil Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/emil.jpg" alt="Emil Perdue">
+					    <div class="card-body">
+                            <h5 class="card-title">Emil Perdue</h5>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                              </button>					    
+                        </div>
+                    </div>
+                    <!-- Emil Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Toby Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/toby.jpg" alt="Toby Hirsch">
+					    <div class="card-body">
+						    <h5 class="card-title">Toby Hirsch</h5>
+						    <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>
+					    </div>
+                    </div>
+                    
+                    <!-- Lucas Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/lucas.jpg" alt="Lucas Gazianis">
+					    <div class="card-body">
+						    <h5 class="card-title">Lucas Gazianis</h5>
+						    <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>
+					    </div>
+					</div>
+				</div>
+                <div class="card-deck" style="padding-top:3%;">
+                    <!-- Alex Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/alex.jpg" alt="Alex Hanna">
+					    <div class="card-body">
+						    <h5 class="card-title">Alex Hanna</h5>
+						    <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>
+					    </div>
+                    </div>
+                    <!-- Tim Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/tim.jpg" alt="Tim Kim">
+					    <div class="card-body">
+						    <h5 class="card-title">Tim Kim</h5>
+						    <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>
+					    </div>
+                    </div>
+                    <!-- Elliot Card -->
+					<div class="card">
+					    <img class="card-img-top" src="img/elliot.jpg" alt="Elliot Kim">
+					    <div class="card-body">
+                            <h5 class="card-title">Elliot Kim</h5>
+						    <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- Contact me form section. Has animations but IS NOT FUNCTIONAL (yet). -->
+		<section id="contact">
+
+			<div class="container" style="height:100vh;">
+                <div class="row" style="text-align:center; padding-bottom:5vh; padding-top:10vh;">
+					<h1 class="col-md-12" style="text-align: center;" id="getInTouch">Get in touch</h1>
+					<p class="col-md-12" style="text-align: center;">Form not currently functional.  To contact Impulse Prep, please email alexwhanna1@gmail.com or call 203-940-3234.</p>
+				</div>
+
+				<!-- Input fields-->
+				<form action="emailSubmit.php" method="post" style="top:30%; transform:translate(0%,10%);">
+					<div class="row" id="namediv">
+						<div class="form">
+							<input type="text" class="messageForm" id="nameInput" name="username" required />
+							<label for="name" class="label-name">
+								<span class="content-name">Name</span>
+							</label>
+						</div>
+					</div>
+					<div class="row" id="emaildiv">
+						<div class="form">
+							<input type="text" class="messageForm" id="emailInput" name="useremail" required />
+							<label for="email" class="label-email">
+								<span class="content-email">Email</span>
+							</label>
+						</div>
+					</div>
+					<div class="row" id="messagediv">
+						<div class="form">
+							<input type="text" class="messageForm" id="messageArea" name="usermessage" required />
+							<label for="email" class="label-message">
+								<span class="content-message">Message</span>
+							</label>
+						</div>
+					</div>
+					
+					<!-- Submit button -->
+					<div style="padding-top:30px; text-align:center;">
+						<button type="submit" id="emailbutton" onclick="alert('Form not currently functional.  To contact Impulse Prep, please email alexwhanna1@gmail.com or call 203-940-3234')"><span>Send</span></button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+        <footer>
+			<div class="row">
+				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+					<p>alexander.hanna@greenwichschools.org
+                        <br>
+                        203-940-3234
+                    </p>
+				</div>
+				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+					<p>Impulse Prep, Copyright &copy; 2020</p>
+				</div>
+				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+					<p>Greenwich, CT 06830
+					</p>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>
