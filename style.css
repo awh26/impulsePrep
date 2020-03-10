@@ -51,7 +51,7 @@ body {
 }
 
 #startBtn:hover {
-	background-color:#245b70;
+	background-color:#1a4252;
 }
 
 /* ------------------------------ Contact form ------------------------------ */
@@ -73,12 +73,12 @@ body {
 	top: 0;
 	right:-20px;
 	transition:0.5s;
-	color: aqua;
+	color: #51c9f9;
 }
 
 #emailbutton:hover span {
 	padding-right: 25px;
-	color: aqua;
+	color: #51c9f9;
 }
 
 #resumeButton:hover span:after,
@@ -89,7 +89,7 @@ body {
 }
 
 #contact {
-	background:#121212;
+	background:#212121;
 }
 
 #emailbutton {
@@ -97,7 +97,7 @@ body {
 	height:38px;
 	width:100px;
 	margin-left:-50px;
-	background-color:#212121;
+	background-color:#121212;
 	border:0px;
 	color:white;
 	transition:all 0.5s;
@@ -121,7 +121,7 @@ body {
 	padding-top:20px;
 	border:none;
 	outline:none;
-	background-color:#111111;
+	background-color:#212121;
 }
 
 .form label{
@@ -142,7 +142,7 @@ body {
 	bottom:-1px;
 	height:100%;
 	width:100%;
-	border-bottom:3px solid aqua;
+	border-bottom:3px solid #51c9f9;
 	transform:translateX(-100%);
 	transition: all 0.3s ease;
 }
@@ -166,7 +166,7 @@ body {
 .form input:valid + .label-message .content-message{
 	transform: translateY(-150%);
 	font-size:1em;
-	color: aqua;
+	color: #51c9f9;
 }
 
 .form input:focus .label-name::after, 
@@ -200,3 +200,4 @@ footer {
 .card-text {
     word-wrap: break-word;
 }
+
