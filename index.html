@@ -75,35 +75,35 @@
 
                     setTimeout(function() { 
                         $('#open1').fadeIn(1000);
-                        $('#open1').fadeOut(2200);
+                        $('#open1').fadeOut(1000);
                     }, 1200);
 
                     setTimeout(function() { 
                         open[0].style.display = "block";
                         open[1].style.display = "block";
                         open[2].style.display = "block";
-                    }, 3200);
+                    }, 2200);
 
                     setTimeout(function() { 
                         open[0].style.transition = "all 4s";
                         open[0].style.color = "#51c9f9";
                         openP[0].style.transition = "all 4s";
                         openP[0].style.color = "white";
-                    }, 3400);
+                    }, 2400);
                     
                     setTimeout(function() { 
                         open[1].style.transition = "all 4s";
                         open[1].style.color = "#51c9f9";
                         openP[1].style.transition = "all 4s";
                         openP[1].style.color = "white";
-                    }, 4900);
+                    }, 3900);
 
                     setTimeout(function() { 
                         open[2].style.transition = "all 4s";
                         open[2].style.color = "#51c9f9";
                         openP[2].style.transition = "all 4s";
                         openP[2].style.color = "white";
-                    }, 6400);
+                    }, 5400);
 
 
                     // setTimeout(function() {
@@ -144,12 +144,13 @@
         <div id="home">
             <div class="landing-text">
                 <div>
+                    <img src="img/logo.png" style="width:200px;" alt="Logo">
                     <h1 style="color:#51c9f9">Impulse Prep</h1>
                     <br>
                     <a href="#about" class="btn btn-default btn-lg start" id="startBtn">Get Started</a>
                     <br><br>
                     
-                    <div style="width:60%;">
+                    <div style="width:60%; margin-left:auto; margin-right:auto;">
                         <p>
                             Our IMPULSE PREP team spans the breadth of high achievers in Greenwich. 
                             With a class president, a nationally recognized debater, and an internationally acclaimed pianist, 
@@ -302,7 +303,7 @@
             </div>
         </section>
 
-        <section id="theteam">
+        <section id="theteam" style="padding-bottom:10vh;">
 			<div class="container">
                 <div class="row" style="padding-top:10vh; text-align:center;">
                     <div class="col-md-12" style="padding-bottom:5vh;">
@@ -315,31 +316,10 @@
 					    <img class="card-img-top" src="img/emil.jpg" alt="Emil Perdue">
 					    <div class="card-body">
                             <h5 class="card-title">Emil Perdue</h5>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                Launch demo modal
-                              </button>					    
+                            <a target="_blank" href="" class="articleLinks"><span>View Profile</span></a>				    
                         </div>
                     </div>
-                    <!-- Emil Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- Toby Card -->
 					<div class="card">
@@ -389,9 +369,9 @@
 		</section>
 
         <!-- Contact me form section. Has animations but IS NOT FUNCTIONAL (yet). -->
-		<section id="contact">
+		<section id="contact" style="background:#212121;">
 
-			<div class="container" style="height:100vh;">
+			<div class="container" style="height:80vh;">
                 <div class="row" style="text-align:center; padding-bottom:5vh; padding-top:10vh;">
 					<h1 class="col-md-12" style="text-align: center;" id="getInTouch">Get in touch</h1>
 					<p class="col-md-12" style="text-align: center;">Form not currently functional.  To contact Impulse Prep, please email alexwhanna1@gmail.com or call 203-940-3234.</p>
