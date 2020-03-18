@@ -197,16 +197,17 @@ footer {
     overflow:hidden;
     background-color:#212121;
 }
+
 .card-text {
     word-wrap: break-word;
 }
 
-.card a {
+#theteam a {
 	color:#51c9f9;
 	padding-bottom:1rem;
 }	
 
-.card a:hover {
+#theteam a:hover {
 	text-decoration:none;
 	color:#3a94b8;
 	cursor:pointer;
@@ -224,4 +225,20 @@ footer {
 .question h3:hover {
 	cursor:pointer;
 	color:#51c9f9;
+}
+
+.socialWrap {
+	padding-top:10px;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	padding:10px;
+	text-align:center;
+	grid-gap:1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:30vw;
+}
+
+.socialWrap img{
+	width:75px;
 }
