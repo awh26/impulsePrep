@@ -1,208 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- metadata-->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<meta name="keywords" content="GHS,Greenwich-High-School,impulse,impulseprep,impulse prep,alex hanna,tim kim,elliot kim, toby hirsch, emil perdue, lucas gazianis">
-		<meta property="og:image" content="img/logo.png">
-		<link rel="icon" href="img/logo.png">
-		<meta name="description" content="We founded Impulse Prep with a simple purpose: to provide high-quality college preparatory 
+
+<head>
+    <!-- metadata-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords"
+        content="GHS,Greenwich-High-School,impulse,impulseprep,impulse prep,alex hanna,tim kim,elliot kim, toby hirsch, emil perdue, lucas gazianis">
+    <meta property="og:image" content="img/logo.png">
+    <link rel="icon" href="img/logo.png">
+    <meta name="description" content="We founded Impulse Prep with a simple purpose: to provide high-quality college preparatory 
         coaching for our clients. Our elite team of six spans a broad array of subjects, 
         from advanced mathematics to the humanities. We are passionate not only about our own studies 
         but about forwarding our success to the next generation of learners.">
-		<meta name="author" content="Alex Hanna">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Impulse Prep</title>
+    <meta name="author" content="Alex Hanna">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Impulse Prep</title>
 
-        <!-- JQuery Import -->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JQuery Import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Bootstrap import-->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap import-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
-		<!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
-    </head>
-    <body>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap"
+        rel="stylesheet">
+</head>
 
-                <div class="collapse navbar-collapse" id="collapse_target">
-                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" style="width:100px;" alt="Logo"></a>
+<body>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link" data-toggle="collapse" data-target="#collapse_target">About</a>
-						</li>
-						<li class="nav-item">
-                            <a href="#services" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#pricing" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#theteam" class="nav-link" data-toggle="collapse" data-target="#collapse_target">The Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link" data-toggle="collapse" data-target="#collapse_target">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-        <div id="homeOrig">
-            <script>
-                $(document).ready(function(){ //smooth scroll for all browsers
-                    $("a").on('click', function(event) {
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        if (this.hash !== "") {
-                            event.preventDefault();
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png" style="width:100px;" alt="Logo"></a>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-toggle="collapse"
+                            data-target="#collapse_target">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-toggle="collapse"
+                            data-target="#collapse_target">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link" data-toggle="collapse"
+                            data-target="#collapse_target">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#theteam" class="nav-link" data-toggle="collapse" data-target="#collapse_target">The
+                            Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-toggle="collapse"
+                            data-target="#collapse_target">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="homeOrig">
+        <script>
+            $(document).ready(function () { //smooth scroll for all browsers
+                $("a").on('click', function (event) {
+
+                    if (this.hash !== "") {
+                        event.preventDefault();
 
                         var hash = this.hash;
 
                         $('html, body').animate({
                             scrollTop: $(hash).offset().top
-                        }, 800, function() {
+                        }, 800, function () {
                             window.location.hash = hash;
                         });
-                        }
-                    });
+                    }
                 });
+            });
 
-                function opening() {
-                    var open = document.getElementsByClassName("open");
-                    var openP = document.getElementsByClassName("openP");
-                    var home = document.getElementById("home");
-
-
-                    document.body.style.overflow = "hidden";
-
-                    setTimeout(function() { 
-                        $('#open1').fadeOut(1000);
-                    }, 1200);
-
-                    setTimeout(function() { 
-                        open[0].style.display = "block";
-                        open[1].style.display = "block";
-                        open[2].style.display = "block";
-                    }, 2200);
-
-                    setTimeout(function() { 
-                        open[0].style.transition = "all 4s";
-                        open[0].style.color = "#51c9f9";
-                        openP[0].style.transition = "all 4s";
-                        openP[0].style.color = "white";
-                    }, 2400);
-                    
-                    setTimeout(function() { 
-                        open[1].style.transition = "all 4s";
-                        open[1].style.color = "#51c9f9";
-                        openP[1].style.transition = "all 4s";
-                        openP[1].style.color = "white";
-                    }, 3900);
-
-                    setTimeout(function() { 
-                        open[2].style.transition = "all 4s";
-                        open[2].style.color = "#51c9f9";
-                        openP[2].style.transition = "all 4s";
-                        openP[2].style.color = "white";
-                    }, 5400);
+            function opening() {
+                var open = document.getElementsByClassName("open");
+                var openP = document.getElementsByClassName("openP");
+                var home = document.getElementById("home");
 
 
-                    setTimeout(function() {
-                        home.scrollIntoView({behavior: 'smooth'});
-			            home.scrollIntoView(true);
-                        
-                    }, 8000);
+                document.body.style.overflow = "hidden";
 
-                    setTimeout(function() {
-                        document.body.style.overflow = "visible";
-                    }, 8000);
+                setTimeout(function () {
+                    $('#open1').fadeOut(1000);
+                }, 1200);
+
+                setTimeout(function () {
+                    open[0].style.display = "block";
+                    open[1].style.display = "block";
+                    open[2].style.display = "block";
+                }, 2200);
+
+                setTimeout(function () {
+                    open[0].style.transition = "all 4s";
+                    open[0].style.color = "#51c9f9";
+                    openP[0].style.transition = "all 4s";
+                    openP[0].style.color = "white";
+                }, 2400);
+
+                setTimeout(function () {
+                    open[1].style.transition = "all 4s";
+                    open[1].style.color = "#51c9f9";
+                    openP[1].style.transition = "all 4s";
+                    openP[1].style.color = "white";
+                }, 3900);
+
+                setTimeout(function () {
+                    open[2].style.transition = "all 4s";
+                    open[2].style.color = "#51c9f9";
+                    openP[2].style.transition = "all 4s";
+                    openP[2].style.color = "white";
+                }, 5400);
+
+
+                setTimeout(function () {
+                    home.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    home.scrollIntoView(true);
+
+                }, 8000);
+
+                setTimeout(function () {
+                    document.body.style.overflow = "visible";
+                }, 8000);
+            }
+            window.onload = opening;
+        </script>
+
+        <div class="landing-text">
+            <div id="open1">
+                <h2><span style="color:#51c9f9">Six</span> Team Members</h2><br>
+            </div>
+        </div>
+
+        <div class="landing-text">
+
+            <div class="open" style="display:none; color:#121212">
+                <h1>1570</h1>
+                <p class="openP">Average SAT Score</p>
+            </div>
+            <div class="open" style="display:none; color:#121212">
+                <h1>3</h1>
+                <p class="openP">National Merit Semifinalists</p>
+            </div>
+            <div class="open" style="display:none; color:#121212">
+                <h1>6/6</h1>
+                <p class="openP">Team Members In Top 5% of HS Class</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="landing-text">
+            <div>
+                <img src="img/logo.png" style="width:200px;" alt="Logo">
+                <h1 style="color:#51c9f9">Impulse Prep</h1>
+                <br>
+                <a href="#about" class="btn btn-default btn-lg start" id="startBtn">Get Started</a>
+                <br><br>
+
+                <div style="width:60%; margin-left:auto; margin-right:auto;">
+                    <p>
+                        Our IMPULSE PREP team spans the breadth of high achievers in Greenwich. With a class president,
+                        a nationally recognized debater, and an internationally acclaimed pianist, a perfect score on
+                        the
+                        math portion of the SAT is only the first prerequisite for being on our team.
+                        <br><br>
+                        Our coaches have been accepted to institutions including Yale University,
+                        Harvard University, The University of Pennsylvania’s Jerome Fisher Program in Management and
+                        Technology,
+                        Columbia University, The University of Chicago, Dartmouth College, Brown University, Cornell
+                        University,
+                        The University of Southern California, Georgetown University, Washington University in St.
+                        Louis, and
+                        The University of North Carolina at Chapel Hill.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" style="background-color:#212121">
+        <div class="container" style="padding-top:10vh; padding-bottom:10vh;">
+            <div class="row" style="text-align:center;">
+                <div class="col-md-12">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+            <div class="row" style="color:grey; text-align:left;">
+                <div class="col-md-12">
+                    <p><br>
+                        We founded Impulse Prep with a simple purpose: to provide high-quality college preparatory
+                        coaching for our clients. Our elite team of six spans a broad array of subjects, from advanced
+                        mathematics to the humanities. We are passionate not only about our own studies but about
+                        forwarding
+                        our success to the next generation of learners.
+
+                        <br><br>
+                        Here is a complete list of the colleges we have been accepted to on academic merit:
+                    </p>
+                    <ul>
+                        <li>
+                            The University of Pennsylvania’s Jerome Fisher Program in Management and Technology
+                        </li>
+                        <li>
+                            Harvard University
+                        </li>
+                        <li>
+                            Yale University
+                        </li>
+                        <li>
+                            Columbia University
+                        </li>
+                        <li>
+                            The University of Chicago
+                        </li>
+                        <li>
+                            Dartmouth College
+                        </li>
+                        <li>
+                            Cornell University
+                        </li>
+                        <li>
+                            Georgetown University (Walsh School of Foreign Service and McDonough School of Business)
+                        </li>
+                        <li>
+                            University of Southern California (Merit Finalist & Honors)
+                        </li>
+                        <li>
+                            University of North Carolina at Chapel Hill (Honors)
+                        </li>
+                        <li>
+                            Washington University in St. Louis
+                        </li>
+                        <li>
+                            Tufts University
+                        </li>
+                        <li>
+                            Northeastern University (Honors)
+                        </li>
+                        <li>
+                            University of Illinois Urbana-Champaign Grainger School of Engineering
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="color:red; text-align:left;">
+                <div class="col-md-12">
+                    <p><br>
+                        Note: Amid the COVID-19 pandemic, it is very hard for students to get extra help and the
+                        attention they need from teachers.
+                        Impulse Prep will continue offering in-person and online tutoring sessions.
+                        None of our team-members have been in contact with anybody with a known case of COVID-19.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="padding-top:10vh; padding-bottom:10vh; background-color:#121212">
+        <script>
+            // function for opening and closing FAQs
+            function questionDropdown(questionNum) {
+                var hidden = document.getElementsByClassName("hiddencontent");
+                var q = document.getElementsByClassName("qtext");
+
+                for (let i = 0; i < hidden.length; i++) {
+                    if (i == questionNum) {
+                        $(hidden[i]).slideToggle();
+                        q[i].style.color = (q[i].style.color == "rgb(81,201,249)" ? "grey" : "#51c9f9");
+                    } else {
+                        $(hidden[i]).slideUp();
+                        q[i].style.color = "grey";
+                    }
                 }
-                window.onload = opening;
-            </script>
+            }
+        </script>
 
-            <div class="landing-text">
-                <div id="open1">
-                    <h2><span style="color:#51c9f9">Six</span> Team Members</h2><br>
+        <div class="container">
+            <div class="row" style="padding-bottom:5vh;">
+                <h1 class="col-md-12" style="text-align: center;">Our Services</h1>
+            </div>
+            <div class="row question" onclick="questionDropdown(0)">
+                <div class="col-md-12">
+                    <h3 class="qtext">College Planning</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <ul>
+                        <li>
+                            Work on developing a theme for college admissions
+                        </li>
+                        <li>
+                            Extracurricular activities
+                        </li>
+                        <li>
+                            College List
+                        </li>
+                        <li>
+                            Utilizing the additional info section
+                        </li>
+                        <li>
+                            Access to coaches' college applications
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="landing-text">
-
-                <div class="open" style="display:none; color:#121212">
-                    <h1>1570</h1>
-                    <p class="openP">Average SAT Score</p>
+            <div class="row question" onclick="questionDropdown(1)">
+                <div class="col-md-12">
+                    <h3 class="qtext">College Preparedness Test Tutoring</h3>
                 </div>
-                <div class="open" style="display:none; color:#121212">
-                    <h1>3</h1>
-                    <p class="openP">National Merit Semifinalists</p>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <ul>
+                        <li>
+                            SAT
+                        </li>
+                        <li>
+                            ACT
+                        </li>
+                        <li>
+                            SAT II Subject Tests
+                        </li>
+                    </ul>
                 </div>
-                <div class="open" style="display:none; color:#121212">
-                    <h1>6/6</h1>
-                    <p class="openP">Team Members In Top 5% of HS Class</p>
+            </div>
+            <div class="row question" onclick="questionDropdown(2)">
+                <div class="col-md-12">
+                    <h3 class="qtext">Academic Tutoring</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <ul>
+                        <li>
+                            Any academic subject
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div id="home">
-            <div class="landing-text">
-                <div>
-                    <img src="img/logo.png" style="width:200px;" alt="Logo">
-                    <h1 style="color:#51c9f9">Impulse Prep</h1>
-                    <br>
-                    <a href="#about" class="btn btn-default btn-lg start" id="startBtn">Get Started</a>
-                    <br><br>
-                    
-                    <div style="width:60%; margin-left:auto; margin-right:auto;">
-                        <p>
-                            Our IMPULSE PREP team spans the breadth of high achievers in Greenwich. 
-                            With a class president, a nationally recognized debater, and an internationally acclaimed pianist, 
-                            a perfect score on the math portion of the SAT is only the first prerequisite for being on our team. 
-                            <br><br>
-                            Our coaches have been accepted to institutions including The University of Pennsylvania’s Jerome Fisher 
-                            Program in Management and Technology, Harvard University, Yale University, Columbia University, The University of Chicago, 
-                            Dartmouth College, Cornell University, The University of Southern California, The University of North Carolina at Chapel Hill, 
-                            Tufts University, and many more.
-                        </p>
-                    </div>
+    <section id="pricing" style="background-color:#212121">
+        <div class="container">
+            <div class="row" style="padding-top:10vh; text-align:center;">
+                <div class="col-md-12">
+                    <h1>College Prep Plans</h1>
+                    <p>
+                        <br>
+                        Email us for more information about any of our college preparatory plans. Once choosing the
+                        plan(s) that you would like to pursue, please <a href="#contact">contact us</a> for more
+                        information.
+                        <br><br>
+                        Regardless of which plan you choose, we will send you a brief survey in which you tell us about
+                        yourself, your interests and your ambitions. We’ll connect you with the consultant best suited
+                        to your
+                        needs, and you’ll work from there.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row question" onclick="questionDropdown(3)" style="padding-top: 50px; padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Full Consultant Package</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $600</span>
+                        <br>
+                        We will help you navigate the Common Application and school-specific writing supplements in
+                        addition to the individual applications of schools like MIT, Georgetown and the University of
+                        California.
+                        We will help your child formulate a well-balanced, appropriate college list, providing
+                        attentive,
+                        comprehensive coaching for each individual application.
+                        <br><br>
+                        <i>
+                            In addition to the specialized attention our coach will give your student, this plan
+                            includes
+                            full access to the successful college applications of all Impulse Prep coaches, including
+                            supplements,
+                            the Activities, Awards and Additional Info sections, and more.
+                        </i>
+                    </p>
                 </div>
             </div>
+
+            <div class="row question" onclick="questionDropdown(4)" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Full Writing Package</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $500</span>
+                        350 up to 12 essays, 12+ is 500
+                    </p>
+                </div>
+            </div>
+
+            <div class="row question" onclick="questionDropdown(5)" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Common App Essay</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $200</span>
+                        We will help you with perhaps the most important piece of your college application portfolio. <a
+                            href="#contact">Contact us</a> for more information.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row question" onclick="questionDropdown(6)" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Supplement Writing Package</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $100-$400</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row question" onclick="questionDropdown(7)" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Resume, Activities, and Additional Info</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $150</span>
+                        We will help you shape your extracurricular to present the best version of yourself.
+                        Besides providing sample resume formats used by our times and successful activity sections,
+                        we will work with you directly to maximize your 10 activity slots, 650 words of additional
+                        info, and optional resume section in your college application.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row question" onclick="questionDropdown(8)" style="padding-bottom: 50px;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Music/Art Supplement Review</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $100</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row question" onclick="questionDropdown(9)" style="padding-bottom: 10vh;">
+                <div class="col-md-12">
+                    <h3 class="qtext">Early College Planning</h3>
+                </div>
+                <div class="col-md-12 hiddencontent" style="display:none;">
+                    <p>
+                        <span class="price">Price: $200</span>
+
+                        The early college planning package features three, 45 minute phone calls with our expert
+                        counselors.
+                    </p>
+                </div>
+            </div>
+
         </div>
-        
-        <section id="about" style="background-color:#212121">
-            <div class="container" style="padding-top:10vh; padding-bottom:10vh;">
-                <div class="row" style="text-align:center;">
-                    <div class="col-md-12">
-                        <h1>About Us</h1>
+    </section>
+
+    <section id="theteam" style="padding-bottom:10vh;">
+        <div class="container">
+            <div class="row" style="padding-top:10vh; text-align:center;">
+                <div class="col-md-12" style="padding-bottom:5vh;">
+                    <h1>The Team</h1>
+                </div>
+            </div>
+            <div class="card-deck">
+
+                <!-- Emil Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/emil.jpg" alt="Emil Perdue">
+                    <div class="card-body">
+                        <h5 class="card-title">Emil Perdue</h5>
+                        <a onclick="bio('emil')">View Profile</a>
                     </div>
                 </div>
-                <div class="row" style="color:grey; text-align:left;">
+
+                <!-- Toby Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/toby.jpg" alt="Toby Hirsch">
+                    <div class="card-body">
+                        <h5 class="card-title">Toby Hirsch</h5>
+                        <a onclick="bio('toby')">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Lucas Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/lucas.jpg" alt="Lucas Gazianis">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Gazianis</h5>
+                        <a onclick="bio('lucas')">View Profile</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-deck" style="padding-top:3%;">
+
+                <!-- Alex Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/alex.jpg" alt="Alex Hanna">
+                    <div class="card-body">
+                        <h5 class="card-title">Alex Hanna</h5>
+                        <a onclick="bio('alex')">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Tim Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/tim.jpg" alt="Tim Kim">
+                    <div class="card-body">
+                        <h5 class="card-title">Tim Kim</h5>
+                        <a onclick="bio('tim')">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Elliot Card -->
+                <div class="card">
+                    <img class="card-img-top" src="img/elliot.jpg" alt="Elliot Kim">
+                    <div class="card-body">
+                        <h5 class="card-title">Elliot Kim</h5>
+                        <a onclick="bio('elliot')">View Profile</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="modal">
+
+        <style>
+            #modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            #bioContain {
+                width: 80%;
+                margin: 10% auto;
+                background-color: #212121;
+                border-radius: 10px;
+                padding: 3rem;
+            }
+
+            #bioContain a {
+                color: #51c9f9;
+                padding-bottom: 1rem;
+            }
+
+            #bioContain a:hover {
+                text-decoration: none;
+                color: #3a94b8;
+                cursor: pointer;
+            }
+
+            #bioContain img {
+                width: 30%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .name {
+                padding-top: 1em;
+                text-align: center;
+            }
+        </style>
+
+        <script>
+            function back(name) {
+                document.getElementById("modal").style.display = "none";
+                document.getElementById(name).style.display = "none";
+            }
+
+            function bio(name) {
+                document.getElementById("modal").style.display = "block";
+                document.getElementById(name).style.display = "block";
+            }
+        </script>
+
+        <div class="container" id="bioContain">
+
+            <!-- Emil Section -->
+            <div id="emil" style="display:none;">
+                <div class="row">
                     <div class="col-md-12">
-                        <p><br>
-                            We founded Impulse Prep with a simple purpose: to provide high-quality college preparatory 
-                            coaching for our clients. Our elite team of six spans a broad array of subjects, 
-                            from advanced mathematics to the humanities. We are passionate not only about our own studies 
-                            but about forwarding our success to the next generation of learners.
-                            <br><br>
-                            Here is a complete list of the colleges we have been accepted to on academic merit:
-                            
+                        <a onclick="back('emil')">Back</a>
+                        <img src="img/emil.jpg" alt="Emil Perdue">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Emil Perdue
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            Quick Facts
                         </p>
+
                         <ul>
                             <li>
-                                The University of Pennsylvania’s Jerome Fisher Program in Management and Technology
+                                Attending the University of Chicago where he plans to double major in computational and
+                                applied mathematics and economics with a specialization in data science
                             </li>
+                            <li>
+                                1580 SAT and 790 Math II Subject Test
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Emil is a rising freshman at the University of Chicago and is a leader
+                            at his school in the fields of political science and community service. He serves as the
+                            President and Founder of the Greenwich Library Advisory Club, an organization committed to
+                            public service through the creation of STEAM events for children and IT programs at several
+                            senior citizen homes. He has also founded a low-cost IT company that has supported over 150
+                            senior citizens with their technological deficits. He has also received the Fleishman
+                            Service award, the highest distinction for community service in his school district.
+                            <br><br>&emsp;&emsp;&emsp;Emil has interned for Congressman Jim Himes for over two years and
+                            has worked and spoken directly with presidential candidates. He also serves as the President
+                            of the Young Democrats Club where he has organized voter drives, dozens of volunteers for
+                            local campaigns, and walk-outs with over 400 students.
+                            <br><br>&emsp;&emsp;&emsp;Emil has extensive experience tutoring a variety of subjects,
+                            having worked at Zaniac Learning where he has taught various levels of computer programming,
+                            mathematics, and robotics to children with both learning abilities and disabilities. During
+                            his tenure as Co-President of the Programming Club, he has helped teach and design computer
+                            science classes to over 35 students at the high school. He also has over five years of
+                            tutoring experience, working primarily in mathematics and computer science. He is a
+                            recipient of the AP National Scholar award (17 AP’s total).
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="subjects">
+                            <i>
+                                Subject Areas: Algebra, Geometry, Calculus, Statistics, Physics, Government, Comparative
+                                Politics, U.S. History, Computer Science, SAT
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="socialWrap">
+                    <a target="_blank" href="https://twitter.com/EmilPerdue" class="socialLink"><img
+                            src="img/twitterlogo.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/emilperdue/" class="socialLink"><img
+                            src="img/linkedinlogo.png"></a>
+                </div>
+            </div>
+
+            <!-- Toby Content -->
+            <div id="toby" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a onclick="back('toby')">Back</a>
+                        <img src="img/toby.jpg" alt="Toby Hirsch">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Toby Hirsch
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            Quick Facts
+                        </p>
+
+                        <ul>
+                            <li>
+                                Accepted early decision to the University of Pennsylvania’s Jerome Fisher Program in
+                                Management and Technology
+                            </li>
+                            <li>
+                                Top STEM student, chosen as one of 400 qualifiers for US Physics Team
+                            </li>
+                            <li>
+                                Nationally recognized writer, speaker and debater
+                            </li>
+                            <li>
+                                1600 SAT
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Toby is a senior at Greenwich High School interested in computer
+                            science, math and business. Along with scoring perfect 800s on three SAT subject tests, he
+                            is currently one of five students at GHS self-studying Linear Algebra and Differential
+                            Equations, and he is one of eight students with a perfect score on the Next Generation
+                            Science Standards test. He was awarded the Perkins Silver Catalyst Award, a STEM award given
+                            to one GHS junior. Toby’s communication skills are also excellent. He is the president of
+                            the Greenwich High School Debate Team, where he has been recognized among the top debaters
+                            at state and national tournaments. He was also awarded $1,000 as the First Place Winner of
+                            the Connecticut Foundation for Open Government’s Essay Contest, and he was elected governor,
+                            the highest office, at Boys State, a leadership program featuring 200 students from across
+                            the state.
+                            <br><br>&emsp;&emsp;&emsp;Toby’s primary area of interest, however, is computer science. He
+                            has created several web applications, including a <a target="_blank"
+                                href="https://www.bigbacboe.com">multiplayer online game</a> and a <a target="_blank"
+                                href="https://greenwich.myclubsource.com">platform for clubs at Greenwich High
+                                School</a>, along with designing and programming many static websites. He is proficient
+                            in many programming disciplines, including full-stack web development, mobile application
+                            development and machine learning. He has 40+ hours of experience as a private tutor, and he
+                            worked at Zaniac, where he taught elementary and middle school students STEM fields.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="subjects">
+                            <i>
+                                Subject areas: Math, Science, Computer Science, Humanities, Music, College Essays,
+                                Standardized Tests
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="socialWrap">
+                    <a target="_blank" href="https://twitter.com/thirsch52" class="socialLink"><img
+                            src="img/twitterlogo.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/tobin-hirsch-522070187/"
+                        class="socialLink"><img src="img/linkedinlogo.png"></a>
+                </div>
+            </div>
+
+            <!-- Lucas Content -->
+            <div id="lucas" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a onclick="back('lucas')">Back</a>
+                        <img src="img/lucas.jpg" alt="Lucas Gazianis">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Lucas Gazianis
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            <br>Stats:
+                        </p>
+
+                        <ul>
+                            <li>
+                                1570 SAT (800 Math, 770 R&W)
+                            </li>
+                            <li>
+                                800 Math II Subject Test
+                            </li>
+                            <li>
+                                780 U.S. History Subject Test
+                            </li>
+                            <li>
+                                760 Spanish Subject Test
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            <br>What he does:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Senior Class President at Greenwich High School
+                            </li>
+                            <li>
+                                Co-founder and co-president of Student Policy Initiative, local political advocacy club
+                            </li>
+                            <li>
+                                Pianist in Jazz at Lincoln Center Youth Orchestra, CT All-State Jazz Ensemble
+                            </li>
+                            <li>
+                                Co-founder and managing member of Clubsource, web platform for GHS
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            Colleges accepted to:
+                        </p>
+
+                        <ul>
                             <li>
                                 Harvard University
                             </li>
@@ -213,22 +835,189 @@
                                 Columbia University
                             </li>
                             <li>
-                                The University of Chicago
+                                Cornell University
+                            </li>
+                            <li>
+                                Georgetown University (McDonough School of Business)
+                            </li>
+                            <li>
+                                Washington University in St. Louis
+                            </li>
+                            <li>
+                                University of Virginia
+                            </li>
+                            <li>
+                                Northeastern University (Honors)
+                            </li>
+                            <li>
+                                Fordham University (Honors and full tuition scholarship)
+                            </li>
+                            <li>
+                                University of Connecticut
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Lucas Gazianis is the senior class president at Greenwich High School
+                            and a nationally recognized jazz pianist. He and Toby Hirsch run the Student Policy
+                            Initiative, a GHS club aimed at developing students’ self-advocacy skills by targeting
+                            school, local and state political issues. In the club, Lucas led a project on the GHS
+                            opportunity block that culminated in a three-stage plan to totally reimagine the school day.
+                            He is also an active jazz pianist, playing weekly with the Jazz at Lincoln Center Youth
+                            Orchestra and leading his trio at gigs around the area. Since his freshman year, he has been
+                            the only pianist from Connecticut selected to play with the All-State Jazz Ensemble, and
+                            this year he was the alternate pianist for the Jazz Band of America, placing second in a
+                            nationwide audition process. He is a National Merit Semifinalist with a score of 1500/1520
+                            on the 2018 PSAT. He received a 1570 on his SAT, as well as an 800, 780 and 760 on the Math
+                            II, U.S. History and Spanish Subject Tests, respectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="subjects">
+                            <i>
+                                Subject Areas: Math, Humanities, Spanish, Science, Piano/Jazz Lessons
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="socialWrap">
+                    <a target="_blank" href="https://twitter.com/lgazianis" class="socialLink"><img
+                            src="img/twitterlogo.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/lucasgazianis/" class="socialLink"><img
+                            src="img/linkedinlogo.png"></a>
+                </div>
+            </div>
+
+            <!-- Alex Content -->
+            <div id="alex" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a onclick="back('alex')">Back</a>
+                        <img src="img/alex.jpg" alt="Alex Hanna">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Alex Hanna
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Alex is a rising Freshman at Purdue University with a passion for
+                            engineering, computer science, and applied sciences. He is a detail oriented, hard-worker
+                            who has programmed multiple websites for local businesses. You can access his personal
+                            website <a target="_blank" href="https://alexwhanna.netlify.app/">here</a>. He was the
+                            Senior Class Vice President and along with Emil is a co-Presidents of the GHS programming
+                            club. As a co-President of the club, he organizes insightful and challenging lessons to
+                            teach computer
+                            programming to students weekly. He has scored especially high on the SAT, earning a 1570
+                            (Math - 800, Verbal - 770) and SAT subject tests (Physics - 780, Math II - 760). He was one
+                            of the few Junior and Seniors at GHS in 2018 to be awarded the AP Science Silver Beaker
+                            award and has earned Science Department Student of the Marking Period in his Freshman and
+                            Junior years. By the end of his Senior year, he will have taken 15 AP exams. Alex joins Toby
+                            as one of the five GHS seniors currently studying Linear Algebra and Differential equations
+                            through the MIT OpenCourseware program. He is also part of the Math, Science, and Spanish
+                            National Honor Societies.
+                            <br><br>&emsp;&emsp;&emsp;Alex also is a varsity athlete on the GHS Water polo and Swim
+                            teams. He was recognized as first team all-FCIAC for his performances in the 50 freestyle
+                            (21.79) and 400 freestyle relay (48.21 split). Additionally, he is also an Eagle Scout with
+                            a Silver Eagle Palm. In his free time he enjoys filmmaking, competing in triathlons, hiking,
+                            and golfing.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="subjects">
+                            <i>
+                                Subject areas: Algebra, Geometry, Calculus, Statistics, Physics, Spanish, Government,
+                                U.S. History, Computer Science, Economics
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="socialWrap">
+                    <a target="_blank" href="https://twitter.com/Alexwh26" class="socialLink"><img
+                            src="img/twitterlogo.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/alex-hanna/" class="socialLink"><img
+                            src="img/linkedinlogo.png"></a>
+                </div>
+            </div>
+
+            <!-- Tim Content -->
+            <div id="tim" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a onclick="back('tim')">Back</a>
+                        <img src="img/tim.jpg" alt="Tim Kim">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Tim Kim
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            <br>Stats:
+                        </p>
+
+                        <ul>
+                            <li>
+                                1560/1600 SAT (800 Math, 760 E&W)
+                            </li>
+                            <li>
+                                1510/1520 PSAT (760 Math, 750 E&W)
+                            </li>
+                            <li>
+                                1760 Literature SAT II
+                            </li>
+                        </ul>
+
+                        <p class="bio"><br>What he does:</p>
+
+                        <ul>
+                            <li>
+                                Vice President of Model United Nations Club
+                            </li>
+                            <li>
+                                Co-founder and managing member of Clubsource, web platform and business
+                            </li>
+                            <li>
+                                Bassoonist selected to All-Eastern Honor Band, played in Wind Ensemble for 4 years
+                            </li>
+                            <li>
+                                Writer and Contributor for Greenwich Free Press
+                            </li>
+                        </ul>
+
+                        <p class="bio">
+                            <br>Colleges accepted to:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Yale University
+                            </li>
+                            <li>
+                                Brown University
+                            </li>
+                            <li>
+                                Georgetown University (School of Foreign Service)
                             </li>
                             <li>
                                 Dartmouth College
                             </li>
                             <li>
-                                Cornell University
-                            </li>
-                            <li>
-                                University of Southern California (Merit Finalist & Honors)
-                            </li>
-                            <li>
-                                University of North Carolina at Chapel Hill (Honors)
-                            </li>
-                            <li>
-                                Washington University in St. Louis
+                                Cornell University (Industrial Labor Relations School)
                             </li>
                             <li>
                                 Tufts University
@@ -237,706 +1026,158 @@
                                 Northeastern University (Honors)
                             </li>
                             <li>
-                                McGill University Software Engineering Program
+                                Boston College
                             </li>
                             <li>
-                                University of Illinois Urbana-Champaign Grainger School of Engineering                       
+                                Boston University
+                            </li>
+                            <li>
+                                George Washington University (Presidential Academic Scholarship)
+                            </li>
+                            <li>
+                                University of Connecticut (Honors)
                             </li>
                         </ul>
+
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Tim is a senior at Greenwich High School interested in international
+                            affairs, history, and law. He has been a vice president of the Model United Nations Club,
+                            the biggest club at Greenwich High School, since sophomore year. Pursuing his passions in
+                            international affairs and law, Tim has had the opportunity to intern at the United Nations
+                            Academic Impact at the United Nations Headquarters and at Skadden, Arps, Slate, Meagher &
+                            Flom LLP, an international law firm. He is also an accomplished musician. Tim was the first
+                            freshman in Greenwich High School’s history to have played with their top ensemble, Wind
+                            Ensemble, for four years. In 2019, he was selected to play with the All-Eastern Honors Band,
+                            which selects high school musicians from thirteen states and Europe. He has volunteered
+                            extensively in places like Guatemala, earning him the US President's Volunteer Service
+                            Award. He is a National Merit Finalist with a score of 1510/1520 on the PSAT. He has
+                            excelled at social sciences at Greenwich High School, receiving 5s on Comparative Government
+                            and Politics, U.S. Government, U.S. History, among other tests.
+                        </p>
                     </div>
                 </div>
-                <div class="row" style="color:red; text-align:left;">
+                <div class="row">
                     <div class="col-md-12">
-                        <p><br>
-                            Note: Amid the COVID-19 pandemic, it is very hard for students to get extra help and the attention they need from teachers.
-                            Impulse Prep will continue offering in-person and online tutoring sessions.  
-                            None of our team-members have been in contact with anybody with a known case of COVID-19.
-                                
+                        <p class="subjects">
+                            <i>
+                                Subject Areas: Social Sciences, Math, Science, Spanish, Music Lessons
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="socialWrap">
+                    <a target="_blank" href="https://www.linkedin.com/in/timothy-kim-66a4a8191/" class="socialLink"><img
+                            src="img/linkedinlogo.png"></a>
+                </div>
+            </div>
+
+            <!-- Elliot Content -->
+            <div id="elliot" style="display:none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a onclick="back('elliot')">Back</a>
+                        <img src="img/elliot.jpg" alt="Elliot Kim">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="name">
+                            Elliot Kim
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="bio">
+                            <br>&emsp;&emsp;&emsp;Elliot is a senior at Greenwich High School and is interested in math,
+                            science, and classical piano. He has won 12 international piano competitions and performed
+                            at Carnegie Hall 8 times, as well as at Lincoln Center, and Boettcher Hall. He has toured
+                            Italy, Spain, Germany, Austria, and France for summer music festivals, and taught music
+                            classes for Bhutanese royalty. He has studied at the Manhattan School of Music for 9 years.
+                            Additionally, he is gifted in the arts, and is currently taking AP 2D Studio Art. He has
+                            also trained with a fencing olympian since 5th grade, and has been on the varsity fencing
+                            team since freshman year. He has scored 1540 on the SAT, and has earned high scores in SAT
+                            subject tests: Math II 800, Physics 780, and US History 770.
+                            <br><br>&emsp;&emsp;&emsp;Elliot is also involved in many community service projects,
+                            including facilitating concerts for community centers, volunteering at Kids In Crisis,
+                            Nathaniel Witherell, and at his church.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="subjects">
+                            <i>
+
+                            </i>
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services" style="padding-top:10vh; padding-bottom:10vh; background-color:#121212">
-            <script>
-                // function for opening and closing FAQs
-                function questionDropdown(questionNum) {
-                    var hidden = document.getElementsByClassName("hiddencontent");
-                    var q = document.getElementsByClassName("qtext");
-                                
-                    for (let i = 0; i < 5; i++){
-                        if (i==questionNum-1) {
-                            $(hidden[i]).slideToggle();
-                            q[i].style.color = (q[i].style.color=="rgb(81,201,249)" ? "grey" : "#51c9f9");
-                        } else {
-                            $(hidden[i]).slideUp();
-                            q[i].style.color = "grey";
-                        }
-                    }
-                }
-            </script>
+    <!-- Contact form section. Has animations but IS NOT FUNCTIONAL (yet). -->
+    <section id="contact" style="background:#212121;">
 
-			<div class="container">
-				<div class="row" style="padding-bottom:5vh;">
-					<h1 class="col-md-12" style="text-align: center;">Our Services</h1>
-				</div>
-				<div class="row question" onclick="questionDropdown(1)">
-					<div class="col-md-12">
-						<h3 class="qtext">College Preparedness Test Tutoring</h3>
-					</div>
-                    <div class="col-md-12 hiddencontent" style="display:none;">
-                        <ul>
-                            <li>
-                                SAT
-                            </li>
-                            <li>
-                                ACT
-                            </li>
-                            <li>
-                                SAT II Subject Tests
-                            </li>
-                        </ul>
-					</div>
-				</div>
-				<div class="row question" onclick="questionDropdown(2)">
-					<div class="col-md-12">
-						<h3 class="qtext">Academic Tutoring</h3>
-                    </div>
-					<div class="col-md-12 hiddencontent" style="display:none;">
-						<ul>
-                            <li>
-                                Any academic subject
-                            </li>
-                        </ul>
-					</div>
-				</div>
-				<div class="row question" onclick="questionDropdown(3)">
-					<div class="col-md-12">
-						<h3 class="qtext">Essay Review</h3>
-					</div>
-					<div class="col-md-12 hiddencontent" style="display:none;">
-						<ul>
-                            <li>
-                                1 time essay review
-                            </li>
-                            <li>
-                                Essay support and planning
-                            </li>
-                        </ul>
-					</div>
-				</div>
-				<div class="row question" onclick="questionDropdown(4)">
-					<div class="col-md-12">
-						<h3 class="qtext">College Planning</h3>
-					</div>
-					<div class="col-md-12 hiddencontent" style="display:none;">
-						<ul>
-                            <li>
-                                Work on developing a theme for college admissions
-                            </li>
-                            <li>
-                                Extracurricular activities
-                            </li>
-                            <li>
-                                College List
-                            </li>
-                            <li>
-                                Utilizing the additional info section
-                            </li>
-                        </ul>
-					</div>
-				</div>
-				<div class="row question" onclick="questionDropdown(5)" style="padding-bottom: 50px;">
-					<div class="col-md-12">
-						<h3 class="qtext">Music Lessons</h3>
-					</div>
-					<div class="col-md-12 hiddencontent" style="display:none;">
-						<ul>
-                            <li>
-                                Classical Piano
-                            </li>
-                            <li>
-                                Jazz Piano
-                            </li>
-                            <li>
-                                Drums
-                            </li>
-                            <li>
-                                Bassoon
-                            </li>
-                        </ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-        <section id="pricing" style="background-color:#212121">
-            <div class="container" style="height:100vh;">
-                <div class="row" style="padding-top:10vh; text-align:center;">
-                    <div class="col-md-12">
-                        <h1>Pricing</h1>
-                    </div>
-                </div>
-                <div class="row" style="padding-top:10vh;">
-                    <div class="col-md-12">
-                        <p>
-                            SAT Tutoring - $75 / hr
-                            <br><br>
-                            Academic Tutoring - $60 / hr
-                            <br><br>
-                            Essay Review - $50 / whole thing
-                        </p>
-                    </div>
-                </div>
+        <div class="container" style="height:80vh;">
+            <div class="row" style="text-align:center; padding-bottom:5vh; padding-top:10vh;">
+                <h1 class="col-md-12" style="text-align: center;" id="getInTouch">Get in touch</h1>
+                <p class="col-md-12" style="text-align: center;"><br>Form not currently functional. To contact Impulse
+                    Prep, please email impulsepreparatory@gmail.com or call 203-940-3234.</p>
             </div>
-        </section>
 
-        <section id="theteam" style="padding-bottom:10vh;">
-			<div class="container">
-                <div class="row" style="padding-top:10vh; text-align:center;">
-                    <div class="col-md-12" style="padding-bottom:5vh;">
-                        <h1>The Team</h1>
+            <form action="emailSubmit.php" method="post" style="top:30%; transform:translate(0%,10%);">
+                <div class="row" id="namediv">
+                    <div class="form">
+                        <input type="text" class="messageForm" id="nameInput" name="username" required />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Name</span>
+                        </label>
                     </div>
                 </div>
-				<div class="card-deck">
-
-                    <!-- Emil Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/emil.jpg" alt="Emil Perdue">
-					    <div class="card-body">
-                            <h5 class="card-title">Emil Perdue</h5>
-                            <a onclick="bio('emil')">View Profile</a>
-                        </div>
+                <div class="row" id="emaildiv">
+                    <div class="form">
+                        <input type="text" class="messageForm" id="emailInput" name="useremail" required />
+                        <label for="email" class="label-email">
+                            <span class="content-email">Email</span>
+                        </label>
                     </div>
-                    
-                    <!-- Toby Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/toby.jpg" alt="Toby Hirsch">
-					    <div class="card-body">
-						    <h5 class="card-title">Toby Hirsch</h5>
-						    <a onclick="bio('toby')">View Profile</a>
-					    </div>
-                    </div>
-                    
-                    <!-- Lucas Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/lucas.jpg" alt="Lucas Gazianis">
-					    <div class="card-body">
-						    <h5 class="card-title">Lucas Gazianis</h5>
-						    <a onclick="bio('lucas')">View Profile</a>
-					    </div>
-                    </div>
-                    
-				</div>
-                <div class="card-deck" style="padding-top:3%;">
-
-                    <!-- Alex Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/alex.jpg" alt="Alex Hanna">
-					    <div class="card-body">
-						    <h5 class="card-title">Alex Hanna</h5>
-						    <a onclick="bio('alex')">View Profile</a>
-					    </div>
-                    </div>
-
-                    <!-- Tim Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/tim.jpg" alt="Tim Kim">
-					    <div class="card-body">
-						    <h5 class="card-title">Tim Kim</h5>
-						    <a onclick="bio('tim')">View Profile</a>
-					    </div>
-                    </div>
-
-                    <!-- Elliot Card -->
-					<div class="card">
-					    <img class="card-img-top" src="img/elliot.jpg" alt="Elliot Kim">
-					    <div class="card-body">
-                            <h5 class="card-title">Elliot Kim</h5>
-                            <a onclick="bio('elliot')">View Profile</a>
-					    </div>
-                    </div>
-                    
-				</div>
-			</div>
-        </section>
-        
-        <section id="modal">
-
-            <style>
-                #modal {
-                    display: none;
-                    position: fixed; 
-                    z-index: 1; 
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: auto; 
-                    background-color: rgb(0,0,0); 
-                    background-color: rgba(0,0,0,0.4); 
-                }
-    
-                #bioContain {
-                    width:80%;
-                    margin: 10% auto; 
-                    background-color:#212121;
-                    border-radius:10px;
-                    padding:3rem;
-                }
-    
-                #bioContain a {
-                    color:#51c9f9;
-                    padding-bottom:1rem;
-                }
-    
-                #bioContain a:hover {
-                    text-decoration:none;
-                    color:#3a94b8;
-                    cursor:pointer;
-                }
-    
-                #bioContain img {
-                    width:30%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-    
-                .name {
-                    padding-top:1em;
-                    text-align: center;
-                }
-            </style>
-    
-            <script>
-                function back() {
-                    document.getElementById("modal").style.display = "none";
-    
-                    document.getElementById("emil").style.display = "none";
-                    document.getElementById("toby").style.display = "none";
-                    document.getElementById("lucas").style.display = "none";
-                    document.getElementById("alex").style.display = "none";
-                    document.getElementById("tim").style.display = "none";
-                    document.getElementById("elliot").style.display = "none";
-                }
-    
-                function bio(name) {
-                    document.getElementById("modal").style.display = "block";
-                    document.getElementById(name).style.display = "block";
-                }
-            </script>
-
-            <div class="container" id="bioContain">
-
-                <!-- Emil Section -->
-                <div id="emil" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/emil.jpg" alt="Emil Perdue">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Emil Perdue
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Emil is a rising freshman at the University of Chicago where he plans to study both applied mathematics and data science. He serves as the President and Founder of the Greenwich Library Advisory Club, an organization committed to public service through the creation of STEAM events for children and IT programs at several senior citizen homes. He has also founded a low-cost IT company that has supported over 150 senior citizens with their technological deficits. He has also received the Fleishman Service award, the highest distinction for community service in his school district. 
-                                <br><br>&emsp;&emsp;&emsp;Emil has interned for Congressman Jim Himes for over two years and has worked and spoken directly with presidential candidates. He also serves as the President of the Young Democrats Club where he has organized voter drives, dozens of volunteers for local campaigns, and walk-outs with over 400 students.
-                                <br><br>&emsp;&emsp;&emsp;Emil has extensive experience tutoring a variety of subjects, having worked at Zaniac Learning where he has taught various levels of computer programming, mathematics, and robotics to children with both learning abilities and disabilities. During his tenure as Co-President of the Programming Club, he has helped teach and design computer science classes to over 35 students at the high school. He also has over five years of tutoring experience, working primarily in mathematics and computer science. He is a recipient of the AP National Scholar award (17 AP’s total) and has received a 1580 on his SAT and 790 on his Math SAT II. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-                                    Subject Areas: Algebra, Geometry, Calculus, Statistics, Physics, Government, Comparative Politics, U.S. History, Computer Science, SAT
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="socialWrap">
-                        <a target="_blank" href="https://twitter.com/EmilPerdue" class="socialLink"><img src="img/twitterlogo.png"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/emilperdue/" class="socialLink"><img src="img/linkedinlogo.png"></a>
+                </div>
+                <div class="row" id="messagediv">
+                    <div class="form">
+                        <input type="text" class="messageForm" id="messageArea" name="usermessage" required />
+                        <label for="email" class="label-message">
+                            <span class="content-message">Message</span>
+                        </label>
                     </div>
                 </div>
 
-                <!-- Toby Content -->
-                <div id="toby" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/toby.jpg" alt="Toby Hirsch">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Toby Hirsch
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Toby is a senior at Greenwich High School interested in computer science, math and business. He is exceptionally strong in the STEM fields, scoring 800s on the Math II, Physics and Chemistry SAT Subject Tests, along with a perfect 1600 on the SAT. He is currently one of five students at GHS self-studying Linear Algebra and Differential Equations, and he is one of eight students with a perfect score on the Next Generation Science Standards test. He was awarded the Perkins Silver Catalyst Award, a STEM award given to one GHS junior. Toby’s communication skills are also excellent. He is the president of the Greenwich High School Debate Team, where he has been recognized among the top debaters in the state. He was also awarded $1,000 as the First Place Winner of the Connecticut Foundation for Open Government’s Essay Contest, and he was elected governor, the highest office, at Boys State, a leadership program featuring 200 students from across the state.
-                                <br><br>&emsp;&emsp;&emsp;Toby’s primary area of interest, however, is computer science. He has created several web applications, including a <a target="_blank" href="https://www.bigbacboe.com">multiplayer online game</a> and a <a target="_blank" href="https://greenwich.myclubsource.com">platform for clubs at Greenwich High School</a>, along with designing and programming many static websites. He is proficient in many programming disciplines, including full-stack web development, mobile application development and machine learning. He has 40+ hours of experience as a private tutor, and he worked at Zaniac, where he taught elementary and middle school students STEM fields.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-                                    Subject areas: Math, Science, Computer Science, Humanities, Music, College Essays, Standardized Tests
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="socialWrap">
-                        <a target="_blank" href="https://twitter.com/thirsch52" class="socialLink"><img src="img/twitterlogo.png"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/tobin-hirsch-522070187/" class="socialLink"><img src="img/linkedinlogo.png"></a>
-                    </div>
+                <div style="padding-top:30px; text-align:center;">
+                    <button type="submit" id="emailbutton"
+                        onclick="alert('Form not currently functional.  To contact Impulse Prep, please email impulsepreparatory@gmail.com or call 203-940-3234')"><span>Send</span></button>
                 </div>
+            </form>
+        </div>
+    </section>
 
-                <!-- Lucas Content -->
-                <div id="lucas" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/lucas.jpg" alt="Lucas Gazianis">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Lucas Gazianis
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>Stats:
-                                <br>1570 SAT (800 Math, 770 R&W)
-                                <br>800 Math II Subject Test
-                                <br>780 U.S. History Subject Test
-                                <br>760 Spanish Subject Test
-                                <br><br>What he does:
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Senior Class President at Greenwich High School
-                                </li>
-                                <li>
-                                    Co-founder and co-president of Student Policy Initiative, local political advocacy club
-                                </li>
-                                <li>
-                                    Pianist in Jazz at Lincoln Center Youth Orchestra, CT All-State Jazz Ensemble
-                                </li>
-                                <li>
-                                    Co-founder and managing member of Clubsource, web platform for GHS
-                                </li>
-                            </ul>
-
-                            <p class="bio">
-                                Colleges accepted to:
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Harvard University
-                                </li>
-                                <li>
-                                    Yale University
-                                </li>
-                                <li>
-                                    Columbia University
-                                </li>
-                                <li>
-                                    Cornell University
-                                </li>
-                                <li>
-                                    Georgetown University (McDonough School of Business)
-                                </li>
-                                <li>
-                                    Washington University in St. Louis
-                                </li>
-                                <li>
-                                    University of Virginia
-                                </li>
-                                <li>
-                                    Northeastern University (Honors)
-                                </li>
-                                <li>
-                                    Fordham University (Honors and full tuition scholarship)
-                                </li>
-                                <li>
-                                    University of Connecticut
-                                </li>
-                            </ul>
- 
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Lucas Gazianis is the senior class president at Greenwich High School and a nationally recognized jazz pianist. He and Toby Hirsch run the Student Policy Initiative, a GHS club aimed at developing students’ self-advocacy skills by targeting school, local and state political issues. In the club, Lucas led a project on the GHS opportunity block that culminated in a three-stage plan to totally reimagine the school day. He is also an active jazz pianist, playing weekly with the Jazz at Lincoln Center Youth Orchestra and leading his trio at gigs around the area. Since his freshman year, he has been the only pianist from Connecticut selected to play with the All-State Jazz Ensemble, and this year he was the alternate pianist for the Jazz Band of America, placing second in a nationwide audition process. He is a National Merit Semifinalist with a score of 1500/1520 on the 2018 PSAT. He received a 1570 on his SAT, as well as an 800, 780 and 760 on the Math II, U.S. History and Spanish Subject Tests, respectively.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-                                    Subject Areas: Math, Humanities, Spanish, Science, Piano/Jazz Lessons
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="socialWrap">
-                        <a target="_blank" href="https://twitter.com/lgazianis" class="socialLink"><img src="img/twitterlogo.png"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/lucasgazianis/" class="socialLink"><img src="img/linkedinlogo.png"></a>
-                    </div>
-                </div>
-
-                <!-- Alex Content -->
-                <div id="alex" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/alex.jpg" alt="Alex Hanna">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Alex Hanna
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Alex is the senior class vice president at Greenwich High School with a passion for engineering, computer science, and applied sciences.  He is a detail oriented, hard-worker who has programmed multiple websites for local businesses.  Him and Emil are co-Presidents of the GHS programming club and organize insightful and challenging lessons to teach computer programming to students weekly.  He has scored especially high on the SAT, earning a 1570 (Math - 800, Verbal - 770) and SAT subject tests (Physics - 780, Math II - 760).  He was one of the few Junior and Seniors at GHS in 2018 to be awarded the AP Science Silver Beaker award and has earned Science Department Student of the Marking Period in his Freshman and Junior years.  By the end of his Senior year, he will have taken 15 AP exams.  Alex joins Toby as one of the five GHS seniors currently studying Linear Algebra and Differential equations through the MIT OpenCourseware program.  He is also the part of the Math, Science, and Spanish National Honor Societies.
-                                <br><br>&emsp;&emsp;&emsp;Alex also is a varsity athlete on the GHS Water polo and Swim teams. Additionally, he is also an Eagle Scout with a Silver Eagle Palm.  In his free time he enjoys filmmaking, competing in triathlons, hiking, and golfing.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-                                    Subject areas: Algebra, Geometry, Calculus, Statistics, Physics, Spanish, Government, U.S. History, Computer Science, Economics
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="socialWrap">
-                        <a target="_blank" href="https://twitter.com/Alexwh26" class="socialLink"><img src="img/twitterlogo.png"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/alex-hanna/" class="socialLink"><img src="img/linkedinlogo.png"></a>
-                    </div>
-                </div>
-
-                <!-- Tim Content -->
-                <div id="tim" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/tim.jpg" alt="Tim Kim">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Tim Kim
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>Stats:
-                                <br>1560/1600 SAT (800 Math, 760 E&W)
-                                <br>1510/1520 PSAT (760 Math, 750 E&W)
-                                <br>760 Literature SAT II 
-
-                                <br><br>What he does:
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Vice President of Model United Nations Club
-                                </li>
-                                <li>
-                                    Co-founder and managing member of Clubsource, web platform and business
-                                </li>
-                                <li>
-                                    Bassoonist selected to All-Eastern Honor Band, played in Wind Ensemble for 4 years
-                                </li>
-                                <li>
-                                    Writer and Contributor for Greenwich Free Press
-                                </li>
-                            </ul>
-
-                            <p class="bio">
-                                <br><br>Colleges accepted to:
-                            </p>
-
-                            <ul>
-                                <li>
-                                    Yale University
-                                </li>
-                                <li>
-                                    Brown University 
-                                </li>
-                                <li>
-                                    Georgetown University (School of Foreign Service)
-                                </li>
-                                <li>
-                                    Dartmouth College
-                                </li>
-                                <li>
-                                    Cornell University (Industrial Labor Relations School)
-                                </li>
-                                <li>
-                                    Tufts University
-                                </li>
-                                <li>
-                                    Northeastern University (Honors)
-                                </li>
-                                <li>
-                                    Boston College
-                                </li>
-                                <li>
-                                    Boston University
-                                </li>
-                                <li>
-                                    George Washington University (Presidential Academic Scholarship)
-                                </li>
-                                <li>
-                                    University of Connecticut (Honors)
-                                </li>
-                            </ul>
-
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Tim is a senior at Greenwich High School interested in international affairs, history, and law. He has been a vice president of the Model United Nations Club, the biggest club at Greenwich High School, since sophomore year. Pursuing his passions in international affairs and law, Tim has had the opportunity to intern at the United Nations Academic Impact at the United Nations Headquarters and at Skadden, Arps, Slate, Meagher & Flom LLP, an international law firm. He is also an accomplished musician. Tim was the first freshman in Greenwich High School’s history to have played with their top ensemble, Wind Ensemble, for four years. In 2019, he was selected to play with the All-Eastern Honors Band, which selects high school musicians from thirteen states and Europe. He has volunteered extensively in places like Guatemala, earning him the US President's Volunteer Service Award. He is a National Merit Finalist with a score of 1510/1520 on the PSAT. He has excelled at social sciences at Greenwich High School, receiving 5s on Comparative Government and Politics, U.S. Government, U.S. History, among other tests. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-                                    Subject Areas: Social Sciences, Math, Science, Spanish, Music Lessons
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="socialWrap">
-                        <a target="_blank" href="https://www.linkedin.com/in/timothy-kim-66a4a8191/" class="socialLink"><img src="img/linkedinlogo.png"></a>
-                    </div>
-                </div>
-
-                <!-- Elliot Content -->
-                <div id="elliot" style="display:none;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a onclick="back()">Back</a>
-                            <img src="img/elliot.jpg" alt="Elliot Kim">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="name">
-                                Elliot Kim
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="bio">
-                                <br>&emsp;&emsp;&emsp;Elliot is a senior at Greenwich High School and is interested in math, science, and classical piano. He has won 12 international piano competitions and performed at Carnegie Hall 8 times, as well as at Lincoln Center, and Boettcher Hall. He has toured Italy, Spain, Germany, Austria, and France for summer music festivals, and taught music classes for Bhutanese royalty. He has studied at the Manhattan School of Music for 9 years. Additionally, he is gifted in the arts, and is currently taking AP 2D Studio Art. He has also trained with a fencing olympian since 5th grade, and has been on the varsity fencing team since freshman year. He has scored 1540 on the SAT, and has earned high scores in SAT subject tests: Math II 800, Physics 780, and US History 770.
-                                <br><br>&emsp;&emsp;&emsp;Elliot is also involved in many community service projects, including facilitating concerts for community centers, volunteering at Kids In Crisis, Nathaniel Witherell, and at his church. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="subjects">
-                                <i>
-    
-                                </i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+                <p>
+                    impulsepreparatory@gmail.com
+                    <br>
+                    203-940-3234
+                </p>
             </div>
-        </section>
+            <div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+                <p>Impulse Prep, Copyright &copy; 2020</p>
+            </div>
+            <div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
+                <p>Greenwich, CT 06830</p>
+            </div>
+        </div>
+    </footer>
+</body>
 
-        <!-- Contact form section. Has animations but IS NOT FUNCTIONAL (yet). -->
-		<section id="contact" style="background:#212121;">
-
-			<div class="container" style="height:80vh;">
-                <div class="row" style="text-align:center; padding-bottom:5vh; padding-top:10vh;">
-                    <h1 class="col-md-12" style="text-align: center;" id="getInTouch">Get in touch</h1>
-					<p class="col-md-12" style="text-align: center;"><br>Form not currently functional.  To contact Impulse Prep, please email impulsepreparatory@gmail.com or call 203-940-3234.</p>
-				</div>
-
-				<form action="emailSubmit.php" method="post" style="top:30%; transform:translate(0%,10%);">
-					<div class="row" id="namediv">
-						<div class="form">
-							<input type="text" class="messageForm" id="nameInput" name="username" required />
-							<label for="name" class="label-name">
-								<span class="content-name">Name</span>
-							</label>
-						</div>
-					</div>
-					<div class="row" id="emaildiv">
-						<div class="form">
-							<input type="text" class="messageForm" id="emailInput" name="useremail" required />
-							<label for="email" class="label-email">
-								<span class="content-email">Email</span>
-							</label>
-						</div>
-					</div>
-					<div class="row" id="messagediv">
-						<div class="form">
-							<input type="text" class="messageForm" id="messageArea" name="usermessage" required />
-							<label for="email" class="label-message">
-								<span class="content-message">Message</span>
-							</label>
-						</div>
-					</div>
-					
-					<div style="padding-top:30px; text-align:center;">
-						<button type="submit" id="emailbutton" onclick="alert('Form not currently functional.  To contact Impulse Prep, please email impulsepreparatory@gmail.com or call 203-940-3234')"><span>Send</span></button>
-					</div>
-				</form>
-			</div>
-        </section>
-
-        <footer>
-			<div class="row">
-				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
-					<p>
-                        impulsepreparatory@gmail.com
-                        <br>
-                        203-940-3234
-                    </p>
-				</div>
-				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
-					<p>Impulse Prep, Copyright &copy; 2020</p>
-				</div>
-				<div class="col-md-4" style="top:50%; transform:translate(0%,25%);">
-					<p>Greenwich, CT 06830</p>
-				</div>
-			</div>
-		</footer>
-    </body>
 </html>
