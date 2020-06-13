@@ -1,45 +1,52 @@
 html {
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background:#121212;
-    color:white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #121212;
+	color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-p, a, li {
+p,
+a,
+li {
 	font-family: 'Raleway', sans-serif;
 }
 
 .container {
-    margin:auto;
-	overflow:hidden;
+	margin: auto;
+	overflow: hidden;
 }
 
 #homeOrig {
 	display: table;
 	height: 100%;
 	width: 100%;
-    background-size: cover;
-    color: white;
+	background-size: cover;
+	color: white;
 }
 
 #home {
 	display: table;
 	height: 100%;
 	width: 100%;
-    background-size: cover;
-    color: white;
+	background-size: cover;
+	color: white;
 }
 
 .landing-text {
@@ -54,33 +61,33 @@ p, a, li {
 }
 
 #startBtn {
-	color:white;
-	border-color:white;
+	color: white;
+	border-color: white;
 }
 
 #startBtn:hover {
-	background-color:#1a4252;
+	background-color: #1a4252;
 }
 
 /* ------------------------------ Contact form ------------------------------ */
 
-#emailbutton:hover{
-	cursor:pointer;
+#emailbutton:hover {
+	cursor: pointer;
 }
 
-#emailbutton span{
-	display:inline-block;
-	position:relative;
-	transition:0.5s;
+#emailbutton span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 }
 
-#emailbutton span:after{
+#emailbutton span:after {
 	content: "\00bb";
 	position: absolute;
-	opacity:0;
+	opacity: 0;
 	top: 0;
-	right:-20px;
-	transition:0.5s;
+	right: -20px;
+	transition: 0.5s;
 	color: #51c9f9;
 }
 
@@ -92,72 +99,72 @@ p, a, li {
 #resumeButton:hover span:after,
 #emailbutton:hover span:after,
 .articleLinks:hover span:after {
-	opacity:1;
-	right:0;
+	opacity: 1;
+	right: 0;
 }
 
 #contact {
-	background:#212121;
+	background: #212121;
 }
 
 #emailbutton {
-	position:absolute;
-	height:38px;
-	width:100px;
-	margin-left:-50px;
-	background-color:#121212;
-	border:0px;
-	color:white;
-	transition:all 0.5s;
-	border-radius:2px;
+	position: absolute;
+	height: 38px;
+	width: 100px;
+	margin-left: -50px;
+	background-color: #121212;
+	border: 0px;
+	color: white;
+	transition: all 0.5s;
+	border-radius: 2px;
 }
 
 .form {
-	width:50%;
-	position:relative;
-	height:75px;
-	overflow:hidden;
-	left:50%;
-	margin-left:-25%;
-	color:grey;
+	width: 50%;
+	position: relative;
+	height: 75px;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -25%;
+	color: grey;
 }
 
-.form input{
-	width:100%;
-	height:100%;
-	color:grey;
-	padding-top:20px;
-	border:none;
-	outline:none;
-	background-color:#212121;
+.form input {
+	width: 100%;
+	height: 100%;
+	color: grey;
+	padding-top: 20px;
+	border: none;
+	outline: none;
+	background-color: #212121;
 }
 
-.form label{
-	position:absolute;
-	bottom:0px;
+.form label {
+	position: absolute;
+	bottom: 0px;
 	left: 0%;
-	height:100%;
-	width:100%;
-	pointer-events:none;
-	border-bottom:1px solid black;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
 
 }
 
 .form label::after {
 	content: "";
 	position: absolute;
-	left:0px;
-	bottom:-1px;
-	height:100%;
-	width:100%;
-	border-bottom:3px solid #51c9f9;
-	transform:translateX(-100%);
+	left: 0px;
+	bottom: -1px;
+	height: 100%;
+	width: 100%;
+	border-bottom: 3px solid #51c9f9;
+	transform: translateX(-100%);
 	transition: all 0.3s ease;
 }
 
 .content-name,
 .content-email,
-.content-message{
+.content-message {
 	position: absolute;
 	bottom: 5px;
 	left: 0px;
@@ -166,87 +173,93 @@ p, a, li {
 }
 
 /* Animation on each of the form inputs (makes text rise above input box)*/
-.form input:focus + .label-name .content-name, 
-.form input:valid + .label-name .content-name,
-.form input:focus + .label-email .content-email, 
-.form input:valid + .label-email .content-email,
-.form input:focus + .label-message .content-message, 
-.form input:valid + .label-message .content-message{
+.form input:focus+.label-name .content-name,
+.form input:valid+.label-name .content-name,
+.form input:focus+.label-email .content-email,
+.form input:valid+.label-email .content-email,
+.form input:focus+.label-message .content-message,
+.form input:valid+.label-message .content-message {
 	transform: translateY(-150%);
-	font-size:1em;
+	font-size: 1em;
 	color: #51c9f9;
 }
 
-.form input:focus .label-name::after, 
-.form input:valid + .label-name::after,
-.form input:focus .label-email::after, 
-.form input:valid + .label-email::after,
-.form input:focus .label-message::after, 
-.form input:valid + .label-message::after{
+.form input:focus .label-name::after,
+.form input:valid+.label-name::after,
+.form input:focus .label-email::after,
+.form input:valid+.label-email::after,
+.form input:focus .label-message::after,
+.form input:valid+.label-message::after {
 	transform: translateX(0%);
 }
 
 footer {
-	color:#989b9f;
-	background-color:#343940;
-	text-align:center;
-	padding:20px;
+	color: #989b9f;
+	background-color: #343940;
+	text-align: center;
+	padding: 20px;
 }
 
 
 /*************************press*****************************************************************/
 
 #press {
-    padding-top:18vh;
-    padding-bottom:10vh;
+	padding-top: 18vh;
+	padding-bottom: 10vh;
 }
 
 .card {
-    overflow:hidden;
-    background-color:#212121;
+	overflow: hidden;
+	background-color: #212121;
 }
 
 .card-text {
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 #theteam a {
-	color:#51c9f9;
-	padding-bottom:1rem;
-}	
+	color: #51c9f9;
+	padding-bottom: 1rem;
+}
 
 #theteam a:hover {
-	text-decoration:none;
-	color:#3a94b8;
-	cursor:pointer;
+	text-decoration: none;
+	color: #3a94b8;
+	cursor: pointer;
 }
 
 /***** Services **/
 .question {
-	padding-bottom:5vh;
+	padding-bottom: 5vh;
 }
 
 .question h3 {
-	color:grey;
+	color: grey;
 }
 
 .question h3:hover {
-	cursor:pointer;
-	color:#51c9f9;
+	cursor: pointer;
+	color: #51c9f9;
 }
 
 .socialWrap {
-	padding-top:10px;
-	display:grid;
-	grid-template-columns:1fr 1fr;
-	padding:10px;
-	text-align:center;
-	grid-gap:1em;
-	margin-left:auto;
-	margin-right:auto;
-	width:30vw;
+	padding-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+	text-align: center;
+	grid-gap: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30vw;
 }
 
-.socialWrap img{
-	width:75px;
+.socialWrap img {
+	width: 75px;
+}
+
+.price {
+	font-style: bold;
+	display: block;
+	margin-bottom: 2rem;
 }
